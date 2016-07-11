@@ -5,6 +5,7 @@ class NewVisitorTest(unittest.TestCase):
 
 	def setUp(self):	
 		self.browser = webdriver.Firefox()
+		self.browser.implicitly_wait(300)
 
 	def tearDown(self):	
 		self.browser.quit()
@@ -41,6 +42,5 @@ class NewVisitorTest(unittest.TestCase):
 
 		browser.quit()
 
-
-	if __name__ == '__main__':	
-		unittest.main(warnings='ignore')	
+if __name__ == '__main__':	
+	unittest.main(warnings='ignore')	
